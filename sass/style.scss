@@ -1,0 +1,467 @@
+/*----------------------------------------
+*
+*
+* 1. header/navbar top css
+* 2. banner css
+* 3. service css
+* 4. latest news top css
+*
+*
+-----------------------------------------*/
+
+/* Sticky navbar */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    background-color: #fff;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+/* Arrow up */
+
+#arrow_up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.section{
+	padding:40px 0px;
+}
+h2.title {
+    margin-bottom: 50px;
+    font-weight: 800;
+}
+
+.dark-bg{
+	background: #EBEBEB;
+}
+
+
+/*----------------------------
+*1. header/navbar top css
+*----------------------------*/
+.navbar{
+	padding:0px;
+}
+
+.logo {
+	position: relative;
+    margin: 0;
+    padding: 10px 0 20px;
+    height: 100%;
+    padding-right: 30px;
+}
+.logo:before{
+    content: ' ';
+    width: 2000px;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    height: 100%;
+    background: #002849;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 9999;
+    transform: skewX(-45deg);
+}
+
+.logo img {
+    width: 70%;
+    position: relative;
+    z-index: 99999;
+}
+
+ul.navbar-header-top {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar-wrap {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #002849 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0px 0px 0 20px;
+}
+
+.navbar-top li{
+	display: inline-block;
+	padding:0px 10px 0px 5px;
+}
+.navbar-top li a {
+    text-decoration: none;
+    color: #002849;
+}
+.navbar-top li:last-child {
+    margin-left: 20px;
+}
+.navbar-top li:last-child a img{
+	width: 44px;
+}
+
+
+
+
+/*----------------------------
+*2. banner css
+*----------------------------*/
+.banner {
+    background: url(../images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 87.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #00AEEF;
+}
+
+.banner-inner h2 {    
+	color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+}
+
+.banner-inner img {
+    margin-bottom: 30px;
+}
+
+.banner-inner p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.banner-inner a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid #fff;
+    padding: 8px 30px 8px 30px;
+    margin-top: 15px;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/*----------------------------
+*3. service css
+*----------------------------*/
+.service-single h2 {
+    font-size: 25px;
+    margin-top: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.service-single p {
+    line-height: 29px;
+}
+
+.service-single {
+    position: relative;
+}
+
+.service-single:after {
+    content: "";
+    width: 1px;
+    height: 130px;
+    background: #E5E5E5;
+    right: -15px;
+    top: 40px;
+    position: absolute;
+}
+.border-remove.service-single:after {
+	display: none;
+}
+
+
+
+/*----------------------------
+*4. latest news top css
+*----------------------------*/
+.latest-news {
+    background-image: url(../images/bg2.png);
+    background-position: center -16%;
+    background-repeat: no-repeat;
+    background-position: 40% -110%;
+}
+
+.full-width{
+	width: 100%;
+}
+
+.latest-left-content {
+    background: #fff;
+    padding: 10px 15px;
+}
+
+.latest-left-content h2 {
+    color: #002849;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.latest-left-content ul {
+    margin: 10px 0 12px 0;
+    padding: 0px 0 14px 0;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+}
+.latest-left-content ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+.latest-left-content ul li span{
+    color: #111;
+}
+
+
+
+/*-----------------------
+*5.latest news
+------------------------*/
+.latest-right-single-img{
+	display: flex;
+}
+.latest-right-single-img img{
+	width: 100%;
+}
+
+.latest-right-single-img {
+    width: 45%;
+    float: left;
+    position: relative;
+}
+
+.latest-right-single-content{
+	width: 55%;
+	float: left;
+	padding: 15px 15px;
+}
+
+
+.latest-right-single-img .shape {
+    width: 0;
+    height: 0;
+    border-bottom: 120px solid #fff;
+    border-left: 120px solid transparent;
+    position: relative;
+    right: 120px;
+    bottom: -167px;
+}
+
+.latest-right-single-img .shape p {
+    position: absolute;
+    right: 12px;
+    bottom: -73px;
+    height: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #002849;
+}
+
+.latest-right-single-img .shape p span {
+    color: #00AEEF;
+    font-size: 25px;
+}
+
+.latest-right-single-content h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.latest-right-single-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.latest-right-single {
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 30px;
+    height: 285px;
+    display: flex;
+    align-items: center;
+}
+
+/*-----------------------
+*6.latest news
+------------------------*/
+.owl-dots {
+    text-align: center;
+        margin-top: 25px;
+}
+
+.owl-carousel button.owl-dot {
+    height: 10px;
+    width: 10px;
+    background: #00BAFF;
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 50%;
+    outline: none;
+}
+button.owl-dot.active {
+    background: #002849;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 40%;
+    outline: none;
+    transform: translate(0, -50px);
+}
+.owl-nav button span {
+    font-size: 100px;
+}
+.owl-nav button:nth-child(1) {
+    left: -5%;
+}
+.owl-nav button:nth-child(2){
+	right: -5%;
+}
+
+.testimonial-area{
+	padding:80px 0px;
+}
+
+.single-client {
+    display: flex;
+}
+.client-photo {
+    margin-right: 10px;
+}
+
+.client-content p {
+    font-weight: 500;
+}
+
+.client-content span {
+    text-align: right;
+    display: block;
+    position: relative;
+    font-weight: 600;
+}
+.client-content span:after {
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    background: #1818186b;
+    content: "";
+    top: 12px;
+    left: -5px;
+}
+/*-----------------------
+*7.cat area
+------------------------*/
+.cta-area {
+    background-image: url(../images/bg3.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #00AEEF;
+}
+
+.cta-content h4 {
+	color: #fff;
+    margin-left: -16px;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.cta-content p {
+	color: #fff;
+    margin-left: -16px;
+    font-size: 17px;
+}
+.cta-subscribe a {
+	background: #00BAFF;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+        font-weight: 700;
+}
+
+.cta-content {
+    margin-top: 20px;
+}
+
+
+/*-----------------------
+*8.footer area
+------------------------*/
+.footer-img {
+    max-width: 100px;
+}
+
+#footer ul  {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+
+#footer ul li a {
+    text-decoration: none;
+    color: #002849;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 15px;
+}
+.newsletter label{
+	font-weight: 600;
+}
+footer#footer h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00aeef;
+}
+
+.newsletter .form-group {
+    position: relative;
+}
+.newsletter .form-group input{
+    border-radius: 0px;
+}
+.newsletter .form-group button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00baff;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 37px;
+    padding: 0px 10px;
+    font-weight: bold;
+}
